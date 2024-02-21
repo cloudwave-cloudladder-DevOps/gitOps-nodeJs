@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: app-configmap
 data:
-  db_host: "database-1.c5qy0844y0e8.ap-northeast-2.rds.amazonaws.com"
+  db_host: "istory.cjayaai6sngi.ap-northeast-2.rds.amazonaws.com"
   db_port: "3306"
-  db_name: "myapp"
+  db_name: "wave_order"
   db_user: "admin"
