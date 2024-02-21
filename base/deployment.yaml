@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-backend
+  name: nodejs-frontend
   namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nodejs-backend
+      app: nodejs-frontend
   template:
     metadata:
       labels:
-        app: nodejs-backend
+        app: nodejs-frontend
     spec:
       containers:
-        - name: nodejs-backend
+        - name: nodejs-frontend
           image: 739306822356.dkr.ecr.ap-northeast-2.amazonaws.com/test
           imagePullPolicy: Always
           ports:
