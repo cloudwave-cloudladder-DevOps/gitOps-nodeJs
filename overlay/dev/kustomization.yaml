@@ -3,6 +3,6 @@ kind: Kustomization
 images:
 - name: 739306822356.dkr.ecr.ap-northeast-2.amazonaws.com/test
   newName: 739306822356.dkr.ecr.ap-northeast-2.amazonaws.com/test
-  newTag: 457ebcb2ecbea84fa1a9030914f0b99891263021
+  newTag: ff4a708529106149ddaac73855d7e135ea98559b
 resources:
 - ../../base
