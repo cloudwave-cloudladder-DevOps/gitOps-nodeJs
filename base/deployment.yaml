@@ -45,3 +45,7 @@ spec:
                 secretKeyRef:
                   name: db-password
                   key: db_password
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
