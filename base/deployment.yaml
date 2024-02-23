@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nodejs-frontend
-          image: 739306822356.dkr.ecr.ap-northeast-2.amazonaws.com/test
+          image: 553823310165.dkr.ecr.ap-northeast-2.amazonaws.com/node-repo
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -49,3 +49,9 @@ spec:
             requests:
               cpu: "100m"
               memory: "256Mi"
+      readinessProbe:
+        httpGet:
+          path: /health
+          port: 3000
+        initialDelaySeconds: 60
+        periodSeconds: 60
