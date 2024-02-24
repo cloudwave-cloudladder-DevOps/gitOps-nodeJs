@@ -7,8 +7,9 @@ metadata:
 spec:
   selector:
     app: nodejs-frontend
-  type: ClusterIP
+  type: NodePort
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
+      nodePort: 30082
