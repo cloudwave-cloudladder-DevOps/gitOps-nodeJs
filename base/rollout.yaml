@@ -1,10 +1,11 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: nodejs-frontend
   namespace: default
 spec:
   replicas: 3
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: nodejs-frontend
@@ -61,3 +62,8 @@ spec:
             successThreshold: 2
             failureThreshold: 3
             periodSeconds: 10
+  strategy:
+    blueGreen:
+      activeService: nodejs-frontend-blue
+      previewService: nodejs-frontend-green
+      autoPromotionEnabled: true
