@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodejs-frontend
+  name: nodejs-frontend-blue
   #  annotations:
   # alb.ingress.kubernetes.io/healthcheck-path: "/"
 spec:

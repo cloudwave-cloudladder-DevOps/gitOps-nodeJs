@@ -64,6 +64,6 @@ spec:
             periodSeconds: 10
   strategy:
     blueGreen:
-      activeService: nodejs-frontend
-      previewService: nodejs-frontend
+      activeService: nodejs-frontend-blue
+      previewService: nodejs-frontend-green
       autoPromotionEnabled: true
