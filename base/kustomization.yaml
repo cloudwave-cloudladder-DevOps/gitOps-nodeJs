@@ -6,5 +6,4 @@ resources:
   - rollout.yaml
   - secret.yaml
   - service1.yaml
-  - service2.yaml
   - hpa.yaml
