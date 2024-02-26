@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
 - ../../base
+images:
+- name: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
+  newName: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
+  newTag: 3a8dd63a69e67ff8cf11c985b12a25d7f8424761
