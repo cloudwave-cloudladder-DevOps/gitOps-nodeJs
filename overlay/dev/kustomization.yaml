@@ -2,10 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 images:
-  - name: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
-    newName: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
-    newTag: 3a8dd63a69e67ff8cf11c985b12a25d7f8424761
+- name: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
+  newName: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
+  newTag: 005ac4056cc9029222e3a63637fe9e096c5dccb7
 
 resources:
 - ../../base
-
