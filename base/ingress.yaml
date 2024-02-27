@@ -14,6 +14,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: nodejs-frontend-green
+                name: nodejs-frontend-blue
                 port:
                   number: 80
