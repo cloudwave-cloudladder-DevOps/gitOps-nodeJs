@@ -10,4 +10,4 @@ resources:
 images:
 - name: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
   newName: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
-  newTag: e8c45ebfe82b82f1d027526a612c1bffd02f9834
+  newTag: fc7cfdee3559da55fb6cbc9f0dc9cde81c09893f
