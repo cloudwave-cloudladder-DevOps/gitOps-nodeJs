@@ -4,7 +4,9 @@ kind: Kustomization
 
 
 resources:
-- ../../base
+  - ../../base
+  - config.yaml
+
 images:
 - name: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
   newName: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder
