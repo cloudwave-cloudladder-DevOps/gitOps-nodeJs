@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nodejs-frontend
-          image: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder:3a8dd63a69e67ff8cf11c985b12a25d7f8424761
+          image: 611155787285.dkr.ecr.ap-northeast-2.amazonaws.com/node_cloudladder:e9c4154a98f4497632945f69648e113b42824286
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
