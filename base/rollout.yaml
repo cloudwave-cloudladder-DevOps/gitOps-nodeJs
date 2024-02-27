@@ -53,15 +53,15 @@ spec:
             limits:
               cpu: 400m
               memory: 600Mi
-#          readinessProbe:
-#            httpGet:
-#              path: /health
-#              port: 3000
-#            initialDelaySeconds: 10
-#            timeoutSeconds: 3
-#            successThreshold: 2
-#            failureThreshold: 3
-#            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 10
+            timeoutSeconds: 3
+            successThreshold: 2
+            failureThreshold: 3
+            periodSeconds: 10
   strategy:
     blueGreen:
       activeService: nodejs-frontend-blue
